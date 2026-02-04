@@ -1,0 +1,29 @@
+name: Daily Market Scanner
+on:
+  schedule:
+    - cron: '0 21 * * 1-5' # Runs at 4 PM EST Mon-Fri
+  workflow_dispatch: # Allows you to run it manually
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: Install Dependencies
+        run: pip install yfinance pandas pandas_ta lxml
+      - name: Run Scanner
+        run: python scanner.py
+      - name: Commit and Push
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add data.json
+          git commit -m "Update daily picks" || exit 0
+          git push
