@@ -1,4 +1,82 @@
 {
-    "last_updated": "2026-02-04 20:34",
-    "picks": []
+    "last_updated": "2026-02-04 20:43",
+    "picks": [
+        {
+            "ticker": "GOOGL",
+            "price": 333.3,
+            "score": 2,
+            "reason": "Volume Spike, Bullish Trend",
+            "rsi": 47.5
+        },
+        {
+            "ticker": "PLTR",
+            "price": 138.55,
+            "score": 2,
+            "reason": "Oversold, Volume Spike",
+            "rsi": 21.9
+        },
+        {
+            "ticker": "PYPL",
+            "price": 40.87,
+            "score": 2,
+            "reason": "Oversold, Volume Spike",
+            "rsi": 10.5
+        },
+        {
+            "ticker": "JPM",
+            "price": 314.85,
+            "score": 2,
+            "reason": "Trend Breakout",
+            "rsi": 54.4
+        },
+        {
+            "ticker": "MSFT",
+            "price": 415.76,
+            "score": 1,
+            "reason": "Oversold",
+            "rsi": 33.7
+        },
+        {
+            "ticker": "TSLA",
+            "price": 408.46,
+            "score": 1,
+            "reason": "Oversold",
+            "rsi": 37.2
+        },
+        {
+            "ticker": "AMD",
+            "price": 203.49,
+            "score": 1,
+            "reason": "Volume Spike",
+            "rsi": 41.2
+        },
+        {
+            "ticker": "META",
+            "price": 674.26,
+            "score": 1,
+            "reason": "Bullish Trend",
+            "rsi": 62.8
+        },
+        {
+            "ticker": "NFLX",
+            "price": 80.48,
+            "score": 1,
+            "reason": "Oversold",
+            "rsi": 23.0
+        },
+        {
+            "ticker": "BA",
+            "price": 236.18,
+            "score": 1,
+            "reason": "Oversold",
+            "rsi": 39.9
+        },
+        {
+            "ticker": "DIS",
+            "price": 107.55,
+            "score": 1,
+            "reason": "Oversold",
+            "rsi": 38.3
+        }
+    ]
 }
