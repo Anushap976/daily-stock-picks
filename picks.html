@@ -21,11 +21,17 @@
     </table>
 
     <script>
-        fetch('data.json')
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('update-time').innerText = "Last Updated: " + data.last_updated;
-                const body = document.getElementById('table-body');
+        // Replace your existing fetch block with this to show a "live" feel
+fetch('data.json')
+    .then(res => res.json())
+    .then(data => {
+        const lastUpdate = new Date(data.last_updated);
+        const now = new Date();
+        const diffMinutes = Math.floor((now - lastUpdate) / 60000);
+        
+        document.getElementById('time').innerText = `Live: Updated ${diffMinutes} mins ago`;
+        // ... rest of your table logic
+    });        const body = document.getElementById('table-body');
                 data.picks.forEach(p => {
                     body.innerHTML += `<tr>
                         <td><b>${p.ticker}</b></td>
