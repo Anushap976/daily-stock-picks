@@ -1,9 +1,10 @@
 name: Daily Market Scanner
 on:
   schedule:
-    - cron: '0 21 * * 1-5'
-  workflow_dispatch:
-
+    # Runs every 5 mins, Mon-Fri, from 13:00 to 21:00 UTC
+    # This covers 9:00 AM to 5:00 PM EST (Market Hours + Buffer)
+    - cron: '*/5 13-21 * * 1-5'
+  workflow_dispatch: # Keeps the manual "Run" button active
 permissions:
   contents: write
 
