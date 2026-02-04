@@ -1,10 +1,10 @@
 name: Daily Market Scanner
 on:
   schedule:
-    # Runs every 5 mins, Mon-Fri, from 13:00 to 21:00 UTC
-    # This covers 9:00 AM to 5:00 PM EST (Market Hours + Buffer)
+    # Runs every 5 mins, Mon-Fri, from 13:00 to 21:00 UTC (9 AM - 5 PM EST)
     - cron: '*/5 13-21 * * 1-5'
-  workflow_dispatch: # Keeps the manual "Run" button active
+  workflow_dispatch:
+
 permissions:
   contents: write
 
@@ -28,5 +28,5 @@ jobs:
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           git add data.json
-          git commit -m "Update daily picks" || exit 0
+          git commit -m "Update live picks" || exit 0
           git push
