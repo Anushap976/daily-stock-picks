@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-02-04 21:15",
+    "last_updated": "2026-02-04 21:21",
     "picks": [
         {
             "ticker": "GOOGL",
@@ -66,17 +66,17 @@
         },
         {
             "ticker": "BA",
-            "price": 235.87,
+            "price": 235.95,
             "score": 1,
             "reason": "Oversold",
-            "rsi": 39.3
+            "rsi": 39.5
         },
         {
             "ticker": "DIS",
-            "price": 107.09,
+            "price": 107.05,
             "score": 1,
             "reason": "Oversold",
-            "rsi": 37.2
+            "rsi": 37.1
         }
     ]
 }
