@@ -4,36 +4,39 @@ import json
 from datetime import datetime
 
 def get_expanded_tickers():
-    """Pulls S&P 500 and Nasdaq 100 tickers."""
+    """Pulls S&P 500 and Nasdaq 100 tickers with a robust fallback."""
     try:
+        # Try fetching from Wikipedia
         sp500 = pd.read_html('https://en.wikipedia.org/wiki/List_of_S%26P_500_companies')[0]['Symbol'].tolist()
         nasdaq100 = pd.read_html('https://en.wikipedia.org/wiki/Nasdaq-100')[4]['Ticker'].tolist()
         tickers = list(set(sp500 + nasdaq100))
-        return [t.replace('.', '-') for t in tickers]
-    except:
-        return ["AAPL", "MSFT", "TSLA", "NVDA", "AMD", "GOOGL", "AMZN", "META"]
+        return [t.replace('.', '-') for t in tickers if isinstance(t, str)]
+    except Exception as e:
+        print(f"Ticker fetch failed, using manual list. Error: {e}")
+        return ["AAPL", "MSFT", "TSLA", "NVDA", "AMD", "GOOGL", "AMZN", "META", "NFLX", "PLTR", "SQ", "PYPL", "BA", "DIS", "JPM"]
 
 def calculate_rsi(series, period=14):
     delta = series.diff()
     gain = (delta.where(delta > 0, 0)).rolling(window=period).mean()
     loss = (-delta.where(delta < 0, 0)).rolling(window=period).mean()
-    rs = gain / loss
+    rs = gain / (loss + 1e-9) # Avoid division by zero
     return 100 - (100 / (1 + rs))
 
 def scan():
     tickers = get_expanded_tickers()
     print(f"Scanning {len(tickers)} stocks...")
     
-    # Batch download
-    data = yf.download(tickers, period="60d", interval="1d", group_by='ticker', threads=True)
+    # Download data
+    # We download 90 days to ensure enough data for 50-day SMAs
+    data = yf.download(tickers, period="90d", interval="1d", group_by='ticker', threads=True)
     
-    picks = []
+    all_results = []
+    
     for ticker in tickers:
         try:
             df = data[ticker].dropna()
             if len(df) < 50: continue
 
-            # Technical Analysis (Manual calculation to avoid library errors)
             close = df['Close']
             df['RSI'] = calculate_rsi(close)
             df['SMA_20'] = close.rolling(window=20).mean()
@@ -43,33 +46,55 @@ def scan():
             last = df.iloc[-1]
             prev = df.iloc[-2]
 
-            # Logic
-            is_oversold = last['RSI'] < 35 
-            is_reversal = prev['Close'] < prev['SMA_20'] and last['Close'] > last['SMA_20']
-            is_volume_spike = last['Volume'] > (avg_vol * 1.5)
+            # --- SCORING LOGIC (Higher is better) ---
+            score = 0
+            reasons = []
 
-            if (is_oversold and is_reversal) or (is_reversal and is_volume_spike):
-                score = 1
-                if is_oversold: score += 1
-                if is_volume_spike: score += 1
-                
-                picks.append({
+            # 1. RSI Oversold (Bottom Fishers)
+            if last['RSI'] < 40: 
+                score += 1
+                reasons.append("Oversold")
+            
+            # 2. Price Momentum (Crossing 20 SMA)
+            if last['Close'] > last['SMA_20'] and prev['Close'] < prev['SMA_20']:
+                score += 2
+                reasons.append("Trend Breakout")
+            
+            # 3. Volume Surge (Institutional interest)
+            if last['Volume'] > (avg_vol * 1.3):
+                score += 1
+                reasons.append("Volume Spike")
+            
+            # 4. Golden Zone (Bullish alignment)
+            if last['Close'] > last['SMA_20'] > last['SMA_50']:
+                score += 1
+                reasons.append("Bullish Trend")
+
+            # We accept anything with a score > 0
+            if score > 0:
+                all_results.append({
                     "ticker": ticker,
                     "price": round(float(last['Close']), 2),
                     "score": score,
-                    "reason": "Oversold Reversal" if is_oversold else "Trend Breakout",
+                    "reason": ", ".join(reasons),
                     "rsi": round(float(last['RSI']), 1)
                 })
         except:
             continue
 
-    # Sort and save
-    picks = sorted(picks, key=lambda x: x['score'], reverse=True)[:15]
-    output = {"last_updated": datetime.now().strftime("%Y-%m-%d %H:%M"), "picks": picks}
+    # SORT BY SCORE and take the top 15
+    # If no scores, it won't be empty if the market is open
+    top_picks = sorted(all_results, key=lambda x: x['score'], reverse=True)[:15]
+    
+    output = {
+        "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M"),
+        "picks": top_picks
+    }
     
     with open('data.json', 'w') as f:
         json.dump(output, f, indent=4)
-    print("Done!")
+    
+    print(f"Scan complete. Found {len(top_picks)} picks.")
 
 if __name__ == "__main__":
     scan()
