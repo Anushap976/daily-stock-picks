@@ -1,75 +1,26 @@
 {
-    "last_updated": "2026-02-04 21:28",
+    "last_updated": "2026-02-04 21:50",
     "picks": [
-        {
-            "ticker": "GOOGL",
-            "price": 333.04,
-            "score": 2,
-            "reason": "Volume Spike, Bullish Trend",
-            "rsi": 47.3
-        },
         {
             "ticker": "PLTR",
             "price": 139.54,
-            "score": 2,
-            "reason": "Oversold, Volume Spike",
+            "score": 3,
+            "reason": "Deeply Oversold, High Volume",
             "rsi": 22.2
-        },
-        {
-            "ticker": "PYPL",
-            "price": 41.03,
-            "score": 2,
-            "reason": "Oversold, Volume Spike",
-            "rsi": 10.5
-        },
-        {
-            "ticker": "AAPL",
-            "price": 276.49,
-            "score": 1,
-            "reason": "Volume Spike",
-            "rsi": 67.1
-        },
-        {
-            "ticker": "TSLA",
-            "price": 406.01,
-            "score": 1,
-            "reason": "Oversold",
-            "rsi": 36.5
         },
         {
             "ticker": "AMD",
             "price": 200.19,
-            "score": 1,
-            "reason": "Volume Spike",
+            "score": 2,
+            "reason": "Low RSI, High Volume",
             "rsi": 40.0
-        },
-        {
-            "ticker": "META",
-            "price": 668.99,
-            "score": 1,
-            "reason": "Bullish Trend",
-            "rsi": 61.4
         },
         {
             "ticker": "NFLX",
             "price": 80.16,
-            "score": 1,
-            "reason": "Oversold",
+            "score": 2,
+            "reason": "Deeply Oversold",
             "rsi": 21.4
-        },
-        {
-            "ticker": "BA",
-            "price": 235.95,
-            "score": 1,
-            "reason": "Oversold",
-            "rsi": 39.5
-        },
-        {
-            "ticker": "DIS",
-            "price": 107.05,
-            "score": 1,
-            "reason": "Oversold",
-            "rsi": 37.1
         }
     ]
 }
