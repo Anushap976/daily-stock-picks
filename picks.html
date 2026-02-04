@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daily Stock Picks</title>
+    <style>
+        body { font-family: sans-serif; background: #121212; color: white; text-align: center; }
+        table { margin: 20px auto; border-collapse: collapse; width: 80%; }
+        th, td { padding: 12px; border: 1px solid #333; }
+        th { background: #1e1e1e; }
+        .score { font-weight: bold; color: #4caf50; }
+    </style>
+</head>
+<body>
+    <h1>Daily Stock Picks</h1>
+    <p id="update-time">Loading...</p>
+    <table>
+        <thead>
+            <tr><th>Ticker</th><th>Price</th><th>Signal</th><th>RSI</th><th>Strength</th></tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+    </table>
+
+    <script>
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('update-time').innerText = "Last Updated: " + data.last_updated;
+                const body = document.getElementById('table-body');
+                data.picks.forEach(p => {
+                    body.innerHTML += `<tr>
+                        <td><b>${p.ticker}</b></td>
+                        <td>$${p.price}</td>
+                        <td>${p.reason}</td>
+                        <td>${p.rsi}</td>
+                        <td class="score">${p.score}/3</td>
+                    </tr>`;
+                });
+            });
+    </script>
+</body>
+</html>
