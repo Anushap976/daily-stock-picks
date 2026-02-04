@@ -1,47 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Daily Stock Picks</title>
+    <title>Live Market Picks</title>
+    <meta http-equiv="refresh" content="300"> <!-- Auto refreshes page every 5 mins -->
     <style>
-        body { font-family: sans-serif; background: #121212; color: white; text-align: center; }
-        table { margin: 20px auto; border-collapse: collapse; width: 80%; }
-        th, td { padding: 12px; border: 1px solid #333; }
-        th { background: #1e1e1e; }
-        .score { font-weight: bold; color: #4caf50; }
+        body { font-family: -apple-system, sans-serif; background: #0d1117; color: #c9d1d9; text-align: center; padding: 20px; }
+        .container { max-width: 900px; margin: auto; }
+        .live-indicator { color: #3fb950; font-weight: bold; margin-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; background: #161b22; border-radius: 10px; overflow: hidden; }
+        th, td { padding: 15px; border-bottom: 1px solid #30363d; text-align: left; }
+        th { background: #21262d; color: #58a6ff; }
+        .ticker-link { color: #ffa657; font-weight: bold; text-decoration: none; }
+        .ticker-link:hover { text-decoration: underline; }
+        .score-badge { background: #238636; color: white; padding: 3px 8px; border-radius: 5px; font-size: 0.9em; }
     </style>
 </head>
 <body>
-    <h1>Daily Stock Picks</h1>
-    <p id="update-time">Loading...</p>
-    <table>
-        <thead>
-            <tr><th>Ticker</th><th>Price</th><th>Signal</th><th>RSI</th><th>Strength</th></tr>
-        </thead>
-        <tbody id="table-body"></tbody>
-    </table>
-
-    <script>
-        // Replace your existing fetch block with this to show a "live" feel
-fetch('data.json')
-    .then(res => res.json())
-    .then(data => {
-        const lastUpdate = new Date(data.last_updated);
-        const now = new Date();
-        const diffMinutes = Math.floor((now - lastUpdate) / 60000);
+    <div class="container">
+        <h1>🚀 Live Stock Picks (5-Min Scan)</h1>
+        <div id="status" class="live-indicator">● Connecting to live feed...</div>
         
-        document.getElementById('time').innerText = `Live: Updated ${diffMinutes} mins ago`;
-        // ... rest of your table logic
-    });        const body = document.getElementById('table-body');
-                data.picks.forEach(p => {
-                    body.innerHTML += `<tr>
-                        <td><b>${p.ticker}</b></td>
-                        <td>$${p.price}</td>
-                        <td>${p.reason}</td>
-                        <td>${p.rsi}</td>
-                        <td class="score">${p.score}/3</td>
-                    </tr>`;
-                });
-            });
-    </script>
-</body>
-</html>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ticker</th>
+                    <th>Price</th>
+                    <th>Signals</th>
+                    <th>RSI</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
