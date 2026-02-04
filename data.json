@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-02-04 21:21",
+    "last_updated": "2026-02-04 21:28",
     "picks": [
         {
             "ticker": "GOOGL",
@@ -28,13 +28,6 @@
             "score": 1,
             "reason": "Volume Spike",
             "rsi": 67.1
-        },
-        {
-            "ticker": "MSFT",
-            "price": 414.19,
-            "score": 1,
-            "reason": "Oversold",
-            "rsi": 33.0
         },
         {
             "ticker": "TSLA",
