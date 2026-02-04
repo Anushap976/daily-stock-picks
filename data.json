@@ -1,82 +1,82 @@
 {
-    "last_updated": "2026-02-04 20:43",
+    "last_updated": "2026-02-04 21:09",
     "picks": [
         {
             "ticker": "GOOGL",
-            "price": 333.3,
+            "price": 333.04,
             "score": 2,
             "reason": "Volume Spike, Bullish Trend",
-            "rsi": 47.5
+            "rsi": 47.3
         },
         {
             "ticker": "PLTR",
-            "price": 138.55,
+            "price": 139.54,
             "score": 2,
             "reason": "Oversold, Volume Spike",
-            "rsi": 21.9
+            "rsi": 22.2
         },
         {
             "ticker": "PYPL",
-            "price": 40.87,
+            "price": 41.03,
             "score": 2,
             "reason": "Oversold, Volume Spike",
             "rsi": 10.5
         },
         {
-            "ticker": "JPM",
-            "price": 314.85,
-            "score": 2,
-            "reason": "Trend Breakout",
-            "rsi": 54.4
+            "ticker": "AAPL",
+            "price": 276.49,
+            "score": 1,
+            "reason": "Volume Spike",
+            "rsi": 67.1
         },
         {
             "ticker": "MSFT",
-            "price": 415.76,
+            "price": 414.19,
             "score": 1,
             "reason": "Oversold",
-            "rsi": 33.7
+            "rsi": 33.0
         },
         {
             "ticker": "TSLA",
-            "price": 408.46,
+            "price": 406.01,
             "score": 1,
             "reason": "Oversold",
-            "rsi": 37.2
+            "rsi": 36.5
         },
         {
             "ticker": "AMD",
-            "price": 203.49,
+            "price": 200.19,
             "score": 1,
             "reason": "Volume Spike",
-            "rsi": 41.2
+            "rsi": 40.0
         },
         {
             "ticker": "META",
-            "price": 674.26,
+            "price": 668.99,
             "score": 1,
             "reason": "Bullish Trend",
-            "rsi": 62.8
+            "rsi": 61.4
         },
         {
             "ticker": "NFLX",
-            "price": 80.48,
+            "price": 80.16,
             "score": 1,
             "reason": "Oversold",
-            "rsi": 23.0
+            "rsi": 21.4
         },
         {
             "ticker": "BA",
-            "price": 236.18,
+            "price": 235.87,
             "score": 1,
             "reason": "Oversold",
-            "rsi": 39.9
+            "rsi": 39.3
         },
         {
             "ticker": "DIS",
-            "price": 107.55,
+            "price": 107.09,
             "score": 1,
             "reason": "Oversold",
-            "rsi": 38.3
+            "rsi": 37.2
         }
     ]
 }
