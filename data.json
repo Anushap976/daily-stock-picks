@@ -1,12 +1,26 @@
 {
-    "last_updated": "2026-02-05 17:26",
+    "last_updated": "2026-02-05 18:10",
     "picks": [
         {
-            "ticker": "PLTR",
-            "price": 133.54,
+            "ticker": "GOOGL",
+            "price": 323.59,
+            "score": 2,
+            "reason": "Low RSI, High Volume",
+            "rsi": 42.1
+        },
+        {
+            "ticker": "NFLX",
+            "price": 81.58,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 20.8
+            "rsi": 29.2
+        },
+        {
+            "ticker": "PLTR",
+            "price": 131.93,
+            "score": 2,
+            "reason": "Deeply Oversold",
+            "rsi": 20.4
         }
     ]
 }
