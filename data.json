@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-02-05 14:03",
+    "last_updated": "2026-02-05 14:58",
     "picks": [
         {
             "ticker": "PLTR",
@@ -7,20 +7,6 @@
             "score": 3,
             "reason": "Deeply Oversold, High Volume",
             "rsi": 22.2
-        },
-        {
-            "ticker": "AMD",
-            "price": 200.19,
-            "score": 2,
-            "reason": "Low RSI, High Volume",
-            "rsi": 40.0
-        },
-        {
-            "ticker": "NFLX",
-            "price": 80.16,
-            "score": 2,
-            "reason": "Deeply Oversold",
-            "rsi": 21.4
         }
     ]
 }
