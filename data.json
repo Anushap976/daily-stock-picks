@@ -1,33 +1,26 @@
 {
-    "last_updated": "2026-02-06 14:00",
+    "last_updated": "2026-02-06 14:50",
     "picks": [
         {
-            "ticker": "MSFT",
-            "price": 393.67,
-            "score": 3,
-            "reason": "Deeply Oversold, High Volume",
-            "rsi": 29.1
-        },
-        {
-            "ticker": "PLTR",
-            "price": 130.01,
-            "score": 3,
-            "reason": "Deeply Oversold, High Volume",
-            "rsi": 19.9
-        },
-        {
             "ticker": "AMZN",
-            "price": 222.69,
+            "price": 202.62,
             "score": 2,
-            "reason": "Low RSI, High Volume",
-            "rsi": 35.5
+            "reason": "Deeply Oversold",
+            "rsi": 24.9
         },
         {
             "ticker": "NFLX",
-            "price": 80.87,
+            "price": 80.85,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 25.8
+            "rsi": 25.9
+        },
+        {
+            "ticker": "PLTR",
+            "price": 134.97,
+            "score": 2,
+            "reason": "Deeply Oversold",
+            "rsi": 26.6
         }
     ]
 }
