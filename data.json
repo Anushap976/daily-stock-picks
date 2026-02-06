@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-02-06 21:54",
+    "last_updated": "2026-02-06 22:18",
     "picks": [
         {
             "ticker": "AMZN",
@@ -14,6 +14,13 @@
             "score": 2,
             "reason": "Price Cross SMA20",
             "rsi": 49.3
+        },
+        {
+            "ticker": "GOOGL",
+            "price": 322.86,
+            "score": 2,
+            "reason": "Low RSI, High Volume",
+            "rsi": 43.7
         },
         {
             "ticker": "PLTR",
