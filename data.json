@@ -1,26 +1,33 @@
 {
-    "last_updated": "2026-02-06 19:23",
+    "last_updated": "2026-02-06 19:53",
     "picks": [
         {
             "ticker": "AMZN",
-            "price": 206.8,
+            "price": 206.34,
             "score": 3,
             "reason": "Deeply Oversold, High Volume",
-            "rsi": 26.4
+            "rsi": 26.2
+        },
+        {
+            "ticker": "NVDA",
+            "price": 185.02,
+            "score": 2,
+            "reason": "Price Cross SMA20",
+            "rsi": 49.0
         },
         {
             "ticker": "NFLX",
-            "price": 81.5,
+            "price": 81.25,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 29.0
+            "rsi": 27.8
         },
         {
             "ticker": "PLTR",
-            "price": 135.76,
+            "price": 135.51,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 27.4
+            "rsi": 27.1
         }
     ]
 }
