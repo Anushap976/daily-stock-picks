@@ -1,4 +1,12 @@
 {
-    "last_updated": "2026-02-09 20:20",
-    "picks": []
+    "last_updated": "2026-02-09 21:00",
+    "picks": [
+        {
+            "ticker": "AMZN",
+            "price": 208.72,
+            "score": 2,
+            "reason": "Low RSI, High Volume",
+            "rsi": 30.9
+        }
+    ]
 }
