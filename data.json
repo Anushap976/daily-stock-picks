@@ -1,33 +1,4 @@
 {
-    "last_updated": "2026-02-09 15:12",
-    "picks": [
-        {
-            "ticker": "GOOGL",
-            "price": 322.86,
-            "score": 2,
-            "reason": "Low RSI, High Volume",
-            "rsi": 43.7
-        },
-        {
-            "ticker": "AMZN",
-            "price": 206.65,
-            "score": 2,
-            "reason": "Deeply Oversold",
-            "rsi": 29.9
-        },
-        {
-            "ticker": "NFLX",
-            "price": 80.11,
-            "score": 2,
-            "reason": "Deeply Oversold",
-            "rsi": 29.6
-        },
-        {
-            "ticker": "PLTR",
-            "price": 135.9,
-            "score": 2,
-            "reason": "Deeply Oversold",
-            "rsi": 27.5
-        }
-    ]
+    "last_updated": "2026-02-09 16:13",
+    "picks": []
 }
