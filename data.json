@@ -1,4 +1,19 @@
 {
-    "last_updated": "2026-02-09 18:04",
-    "picks": []
+    "last_updated": "2026-02-09 19:37",
+    "picks": [
+        {
+            "ticker": "NVDA",
+            "price": 185.41,
+            "score": 2,
+            "reason": "Price Cross SMA20",
+            "rsi": 49.3
+        },
+        {
+            "ticker": "PLTR",
+            "price": 135.9,
+            "score": 2,
+            "reason": "Deeply Oversold",
+            "rsi": 27.5
+        }
+    ]
 }
