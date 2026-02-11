@@ -1,19 +1,19 @@
 {
-    "last_updated": "2026-02-11 20:53",
+    "last_updated": "2026-02-11 21:26",
     "picks": [
         {
             "ticker": "TSLA",
-            "price": 427.72,
+            "price": 428.27,
             "score": 3,
             "reason": "Low RSI, Price Cross SMA20",
-            "rsi": 40.3
+            "rsi": 40.6
         },
         {
             "ticker": "AMZN",
-            "price": 204.37,
+            "price": 204.08,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 24.8
+            "rsi": 24.7
         }
     ]
 }
