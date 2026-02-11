@@ -1,12 +1,12 @@
 {
-    "last_updated": "2026-02-11 16:17",
+    "last_updated": "2026-02-11 17:29",
     "picks": [
         {
             "ticker": "AMZN",
-            "price": 205.04,
+            "price": 203.36,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 25.1
+            "rsi": 24.4
         }
     ]
 }
