@@ -1,40 +1,40 @@
 {
-    "last_updated": "2026-02-12 17:13",
+    "last_updated": "2026-02-12 18:08",
     "picks": [
         {
-            "ticker": "TSLA",
-            "price": 428.27,
-            "score": 3,
-            "reason": "Low RSI, Price Cross SMA20",
-            "rsi": 40.6
-        },
-        {
             "ticker": "MSFT",
-            "price": 400.82,
+            "price": 402.86,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 27.1
+            "rsi": 27.5
         },
         {
             "ticker": "AMD",
-            "price": 207.32,
+            "price": 207.97,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 28.4
+            "rsi": 28.6
         },
         {
             "ticker": "AMZN",
-            "price": 199.11,
+            "price": 199.61,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 16.6
+            "rsi": 16.7
         },
         {
             "ticker": "NFLX",
-            "price": 76.07,
+            "price": 76.5,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 19.9
+            "rsi": 20.5
+        },
+        {
+            "ticker": "PLTR",
+            "price": 128.19,
+            "score": 2,
+            "reason": "Deeply Oversold",
+            "rsi": 26.9
         }
     ]
 }
