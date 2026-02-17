@@ -1,40 +1,54 @@
 {
-    "last_updated": "2026-02-17 18:06",
+    "last_updated": "2026-02-17 19:13",
     "picks": [
         {
+            "ticker": "AAPL",
+            "price": 265.57,
+            "score": 2,
+            "reason": "Price Cross SMA20",
+            "rsi": 56.2
+        },
+        {
             "ticker": "MSFT",
-            "price": 395.59,
+            "price": 397.01,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 18.0
+            "rsi": 18.2
+        },
+        {
+            "ticker": "NVDA",
+            "price": 185.7,
+            "score": 2,
+            "reason": "Price Cross SMA20",
+            "rsi": 47.5
         },
         {
             "ticker": "AMD",
-            "price": 201.88,
+            "price": 203.78,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 29.2
+            "rsi": 29.6
         },
         {
             "ticker": "GOOGL",
-            "price": 300.74,
+            "price": 302.53,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 19.5
+            "rsi": 20.2
         },
         {
             "ticker": "AMZN",
-            "price": 199.35,
+            "price": 201.09,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 7.8
+            "rsi": 10.7
         },
         {
             "ticker": "NFLX",
-            "price": 76.4,
+            "price": 77.02,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 24.3
+            "rsi": 25.6
         }
     ]
 }
