@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-02-17 21:01",
+    "last_updated": "2026-02-17 21:48",
     "picks": [
         {
             "ticker": "AAPL",
@@ -38,10 +38,10 @@
         },
         {
             "ticker": "NFLX",
-            "price": 77.03,
+            "price": 77.0,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 25.7
+            "rsi": 25.5
         }
     ]
 }
