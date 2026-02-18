@@ -1,47 +1,54 @@
 {
-    "last_updated": "2026-02-18 15:01",
+    "last_updated": "2026-02-18 16:01",
     "picks": [
         {
+            "ticker": "AAPL",
+            "price": 263.88,
+            "score": 2,
+            "reason": "Price Cross SMA20",
+            "rsi": 54.9
+        },
+        {
             "ticker": "MSFT",
-            "price": 398.83,
+            "price": 401.86,
+            "score": 2,
+            "reason": "Deeply Oversold",
+            "rsi": 20.6
+        },
+        {
+            "ticker": "NVDA",
+            "price": 190.14,
+            "score": 2,
+            "reason": "Price Cross SMA20",
+            "rsi": 48.8
+        },
+        {
+            "ticker": "AMD",
+            "price": 201.39,
+            "score": 2,
+            "reason": "Deeply Oversold",
+            "rsi": 28.6
+        },
+        {
+            "ticker": "GOOGL",
+            "price": 302.02,
+            "score": 2,
+            "reason": "Deeply Oversold",
+            "rsi": 20.0
+        },
+        {
+            "ticker": "AMZN",
+            "price": 206.25,
             "score": 2,
             "reason": "Deeply Oversold",
             "rsi": 18.8
         },
         {
-            "ticker": "NVDA",
-            "price": 188.9,
-            "score": 2,
-            "reason": "Price Cross SMA20",
-            "rsi": 47.7
-        },
-        {
-            "ticker": "AMD",
-            "price": 197.68,
-            "score": 2,
-            "reason": "Deeply Oversold",
-            "rsi": 27.8
-        },
-        {
-            "ticker": "GOOGL",
-            "price": 302.85,
-            "score": 2,
-            "reason": "Deeply Oversold",
-            "rsi": 19.1
-        },
-        {
-            "ticker": "AMZN",
-            "price": 204.71,
-            "score": 2,
-            "reason": "Deeply Oversold",
-            "rsi": 16.7
-        },
-        {
             "ticker": "NFLX",
-            "price": 77.3,
+            "price": 77.58,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 28.3
+            "rsi": 29.4
         }
     ]
 }
