@@ -1,13 +1,6 @@
 {
-    "last_updated": "2026-02-19 14:07",
+    "last_updated": "2026-02-19 15:04",
     "picks": [
-        {
-            "ticker": "MSFT",
-            "price": 399.6,
-            "score": 2,
-            "reason": "Deeply Oversold",
-            "rsi": 19.2
-        },
         {
             "ticker": "NVDA",
             "price": 187.98,
@@ -17,24 +10,31 @@
         },
         {
             "ticker": "AMD",
-            "price": 200.12,
+            "price": 202.65,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 28.3
+            "rsi": 29.9
         },
         {
             "ticker": "GOOGL",
-            "price": 303.33,
-            "score": 2,
-            "reason": "Deeply Oversold",
-            "rsi": 19.8
-        },
-        {
-            "ticker": "AMZN",
-            "price": 204.79,
+            "price": 303.63,
             "score": 2,
             "reason": "Deeply Oversold",
             "rsi": 16.8
+        },
+        {
+            "ticker": "AMZN",
+            "price": 205.18,
+            "score": 2,
+            "reason": "Deeply Oversold",
+            "rsi": 17.7
+        },
+        {
+            "ticker": "META",
+            "price": 642.82,
+            "score": 2,
+            "reason": "Deeply Oversold",
+            "rsi": 15.2
         }
     ]
 }
