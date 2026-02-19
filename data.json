@@ -1,40 +1,33 @@
 {
-    "last_updated": "2026-02-19 15:04",
+    "last_updated": "2026-02-19 16:00",
     "picks": [
         {
-            "ticker": "NVDA",
-            "price": 187.98,
-            "score": 2,
-            "reason": "Price Cross SMA20",
-            "rsi": 46.8
-        },
-        {
             "ticker": "AMD",
-            "price": 202.65,
+            "price": 202.32,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 29.9
+            "rsi": 29.8
         },
         {
             "ticker": "GOOGL",
-            "price": 303.63,
+            "price": 303.1,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 16.8
+            "rsi": 16.2
         },
         {
             "ticker": "AMZN",
-            "price": 205.18,
+            "price": 204.51,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 17.7
+            "rsi": 17.1
         },
         {
             "ticker": "META",
-            "price": 642.82,
+            "price": 643.9,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 15.2
+            "rsi": 15.7
         }
     ]
 }
