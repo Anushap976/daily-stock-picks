@@ -1,19 +1,19 @@
 {
-    "last_updated": "2026-02-20 18:02",
+    "last_updated": "2026-02-20 19:01",
     "picks": [
         {
             "ticker": "AMZN",
-            "price": 209.65,
+            "price": 204.86,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 24.7
+            "rsi": 17.3
         },
         {
             "ticker": "META",
-            "price": 656.99,
+            "price": 658.04,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 26.9
+            "rsi": 27.5
         }
     ]
 }
