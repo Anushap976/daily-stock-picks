@@ -1,13 +1,6 @@
 {
-    "last_updated": "2026-02-19 22:17",
+    "last_updated": "2026-02-20 13:58",
     "picks": [
-        {
-            "ticker": "MSFT",
-            "price": 398.46,
-            "score": 2,
-            "reason": "Deeply Oversold",
-            "rsi": 29.7
-        },
         {
             "ticker": "GOOGL",
             "price": 302.85,
