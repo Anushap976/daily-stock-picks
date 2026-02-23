@@ -1,47 +1,47 @@
 {
-    "last_updated": "2026-02-23 17:00",
+    "last_updated": "2026-02-23 18:03",
     "picks": [
         {
             "ticker": "AAPL",
-            "price": 265.98,
+            "price": 268.53,
             "score": 2,
             "reason": "Price Cross SMA20",
-            "rsi": 46.5
+            "rsi": 48.9
         },
         {
             "ticker": "MSFT",
-            "price": 385.76,
+            "price": 387.21,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 29.1
+            "rsi": 29.6
         },
         {
             "ticker": "AMD",
-            "price": 195.83,
+            "price": 195.6,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 26.4
+            "rsi": 26.3
         },
         {
             "ticker": "GOOGL",
-            "price": 313.79,
+            "price": 314.09,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 25.0
+            "rsi": 25.1
         },
         {
             "ticker": "AMZN",
-            "price": 204.02,
+            "price": 204.23,
             "score": 2,
             "reason": "Deeply Oversold",
             "rsi": 18.4
         },
         {
             "ticker": "META",
-            "price": 641.99,
+            "price": 642.91,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 25.4
+            "rsi": 25.6
         }
     ]
 }
