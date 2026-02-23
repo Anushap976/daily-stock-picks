@@ -1,6 +1,13 @@
 {
-    "last_updated": "2026-02-23 14:06",
+    "last_updated": "2026-02-23 15:03",
     "picks": [
+        {
+            "ticker": "AMD",
+            "price": 197.9,
+            "score": 2,
+            "reason": "Deeply Oversold",
+            "rsi": 26.9
+        },
         {
             "ticker": "AMZN",
             "price": 210.11,
@@ -10,10 +17,10 @@
         },
         {
             "ticker": "META",
-            "price": 655.66,
+            "price": 649.84,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 26.1
+            "rsi": 27.1
         }
     ]
 }
