@@ -1,23 +1,37 @@
 {
-    "last_updated": "2026-02-24 17:19",
+    "last_updated": "2026-02-24 18:12",
     "picks": [
         {
-            "ticker": "GOOGL",
-            "price": 311.13,
+            "ticker": "AMD",
+            "price": 196.6,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 25.5
+            "rsi": 26.6
+        },
+        {
+            "ticker": "GOOGL",
+            "price": 311.23,
+            "score": 2,
+            "reason": "Deeply Oversold",
+            "rsi": 25.6
         },
         {
             "ticker": "AMZN",
-            "price": 209.53,
+            "price": 209.18,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 25.9
+            "rsi": 25.4
         },
         {
             "ticker": "META",
-            "price": 639.21,
+            "price": 639.55,
+            "score": 2,
+            "reason": "Deeply Oversold",
+            "rsi": 28.9
+        },
+        {
+            "ticker": "PLTR",
+            "price": 129.05,
             "score": 2,
             "reason": "Deeply Oversold",
             "rsi": 28.7
