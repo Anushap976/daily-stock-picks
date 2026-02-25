@@ -1,26 +1,33 @@
 {
-    "last_updated": "2026-02-25 18:37",
+    "last_updated": "2026-02-25 19:36",
     "picks": [
         {
+            "ticker": "TSLA",
+            "price": 415.92,
+            "score": 2,
+            "reason": "Price Cross SMA20",
+            "rsi": 55.7
+        },
+        {
             "ticker": "GOOGL",
-            "price": 310.37,
+            "price": 310.69,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 28.4
+            "rsi": 28.6
         },
         {
             "ticker": "AMZN",
-            "price": 209.09,
+            "price": 210.44,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 27.9
+            "rsi": 29.7
         },
         {
             "ticker": "NFLX",
-            "price": 82.43,
+            "price": 82.87,
             "score": 2,
             "reason": "Price Cross SMA20",
-            "rsi": 54.8
+            "rsi": 55.6
         }
     ]
 }
