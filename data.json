@@ -1,4 +1,33 @@
 {
-    "last_updated": "2026-02-25 15:08",
-    "picks": []
+    "last_updated": "2026-02-25 16:18",
+    "picks": [
+        {
+            "ticker": "AMD",
+            "price": 213.84,
+            "score": 2,
+            "reason": "Low RSI, High Volume",
+            "rsi": 38.1
+        },
+        {
+            "ticker": "GOOGL",
+            "price": 310.48,
+            "score": 2,
+            "reason": "Deeply Oversold",
+            "rsi": 28.5
+        },
+        {
+            "ticker": "AMZN",
+            "price": 209.94,
+            "score": 2,
+            "reason": "Deeply Oversold",
+            "rsi": 29.1
+        },
+        {
+            "ticker": "NFLX",
+            "price": 82.01,
+            "score": 2,
+            "reason": "Price Cross SMA20",
+            "rsi": 54.0
+        }
+    ]
 }
