@@ -1,4 +1,12 @@
 {
-    "last_updated": "2026-03-02 19:23",
-    "picks": []
+    "last_updated": "2026-03-02 19:55",
+    "picks": [
+        {
+            "ticker": "NVDA",
+            "price": 177.19,
+            "score": 2,
+            "reason": "Low RSI, High Volume",
+            "rsi": 41.1
+        }
+    ]
 }
