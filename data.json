@@ -1,19 +1,26 @@
 {
-    "last_updated": "2026-03-03 17:59",
+    "last_updated": "2026-03-03 19:01",
     "picks": [
         {
-            "ticker": "MSFT",
-            "price": 401.88,
+            "ticker": "META",
+            "price": 657.52,
             "score": 3,
             "reason": "Low RSI, Price Cross SMA20",
-            "rsi": 42.4
+            "rsi": 43.7
+        },
+        {
+            "ticker": "MSFT",
+            "price": 405.43,
+            "score": 2,
+            "reason": "Price Cross SMA20",
+            "rsi": 45.2
         },
         {
             "ticker": "TSLA",
-            "price": 390.97,
+            "price": 392.86,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 28.7
+            "rsi": 29.4
         }
     ]
 }
