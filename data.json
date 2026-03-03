@@ -1,12 +1,12 @@
 {
-    "last_updated": "2026-03-03 15:33",
+    "last_updated": "2026-03-03 16:26",
     "picks": [
         {
             "ticker": "TSLA",
-            "price": 387.43,
+            "price": 392.96,
             "score": 2,
             "reason": "Deeply Oversold",
-            "rsi": 27.5
+            "rsi": 29.4
         }
     ]
 }
