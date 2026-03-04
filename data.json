@@ -1,19 +1,19 @@
 {
-    "last_updated": "2026-03-04 16:58",
+    "last_updated": "2026-03-04 17:42",
     "picks": [
         {
             "ticker": "AMZN",
-            "price": 215.15,
+            "price": 215.0,
             "score": 2,
             "reason": "Price Cross SMA20",
-            "rsi": 63.8
+            "rsi": 63.7
         },
         {
             "ticker": "META",
-            "price": 670.17,
+            "price": 666.64,
             "score": 2,
             "reason": "Price Cross SMA20",
-            "rsi": 50.6
+            "rsi": 49.1
         }
     ]
 }
