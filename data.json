@@ -1,26 +1,26 @@
 {
-    "last_updated": "2026-03-10 14:58",
+    "last_updated": "2026-03-10 16:04",
     "picks": [
         {
             "ticker": "AMD",
-            "price": 204.9,
+            "price": 203.99,
             "score": 2,
             "reason": "Price Cross SMA20",
-            "rsi": 52.9
+            "rsi": 52.3
         },
         {
             "ticker": "GOOGL",
-            "price": 308.49,
+            "price": 308.7,
             "score": 2,
             "reason": "Price Cross SMA20",
-            "rsi": 55.2
+            "rsi": 55.4
         },
         {
             "ticker": "META",
-            "price": 659.3,
+            "price": 656.41,
             "score": 2,
             "reason": "Price Cross SMA20",
-            "rsi": 56.9
+            "rsi": 55.8
         }
     ]
 }
