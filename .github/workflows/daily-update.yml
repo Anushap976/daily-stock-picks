@@ -6,6 +6,8 @@ on:
     - cron: '30 13 * * 1-5'
   workflow_dispatch: # Allows manual trigger
 
+permissions:
+  contents: write 
 jobs:
   update-picks:
     runs-on: ubuntu-latest
